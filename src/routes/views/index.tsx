@@ -5,6 +5,8 @@ import { Document, Page, pdfjs } from 'react-pdf';
 // "Error: Setting up fake worker failed: "Cannot read properties of undefined (reading 'WorkerMessageHandler')".
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
+import './index.less'
+
 const options = {
   cMapUrl: 'cmaps/',
   cMapPacked: true,
